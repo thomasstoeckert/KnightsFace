@@ -1,0 +1,77 @@
+{
+  "name": "knightsface",
+  "author": "Thomas@Stoeckert.us",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "pdc-transform": "^2.0.4",
+    "pebble-clay": "^1.0.4",
+    "pebble-events": "^1.2.0"
+  },
+  "pebble": {
+    "displayName": "KnightsFace",
+    "uuid": "6d706e45-d41e-4f47-8a1c-33a49047ab5e",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "chalk"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy",
+      "centerIcon",
+      "displayDate",
+      "displayCharge",
+      "displayAnalog"
+    ],
+    "resources": {
+      "media": [
+        {
+          "file": "images/ticks.png",
+          "name": "BACKGROUND_TICKS",
+          "targetPlatforms": null,
+          "type": "bitmap"
+        },
+        {
+          "file": "images/knightro.png",
+          "name": "CENTER_KNIGHTRO",
+          "targetPlaftforms": null,
+          "type": "bitmap"
+        },
+        {
+          "file": "images/pegasus.png",
+          "name": "CENTER_PEGASUS",
+          "targetPlatforms": null,
+          "type": "bitmap"
+        },
+        {
+          "file": "images/stacked.png",
+          "name": "CENTER_STACKED",
+          "targetPlatforms": null,
+          "type": "bitmap"
+        },
+        {
+          "file": "data/MINUTESWORD.pdc",
+          "name": "SWORD_MINUTE",
+          "type": "raw"
+        },
+        {
+          "file": "data/HOURSWORD.pdc",
+          "name": "SWORD_HOUR",
+          "type": "raw"
+        },
+        {
+          "name": "ICON",
+          "file": "images/menu.png",
+          "menuIcon": true,
+          "type": "bitmap"
+        }
+      ]
+    }
+  }
+}

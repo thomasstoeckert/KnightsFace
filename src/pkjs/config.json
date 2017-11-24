@@ -1,0 +1,57 @@
+[
+    {
+        "type": "heading",
+        "defaultValue": "UCF KnightsFace"
+    },
+    {
+        "type": "section",
+        "items": [
+            {
+                "type": "heading",
+                "defaultValue": "Display Settings"
+            },
+            {
+                "type": "select",
+                "messageKey": "centerIcon",
+                "defaultValue": "knightro",
+                "label": "Center Icon",
+                "options": [
+                    {
+                        "label": "Knightro",
+                        "value": "knightro"
+                    },
+                    {
+                        "label": "Stacked Initials",
+                        "value": "stacked"
+                    },
+                    {
+                        "label": "Pegasus",
+                        "value": "pegasus"
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "messageKey": "displayDate",
+                "label": "Display the Date",
+                "defaultValue": true
+            },
+            {
+                "type": "toggle",
+                "messageKey": "displayCharge",
+                "label": "Display the Charge",
+                "defaultValue": true
+            },
+            {
+                "type": "toggle",
+                "messageKey": "displayAnalog",
+                "label": "Use an Analog Display",
+                "defaultValue": true
+            }
+        ]
+    },
+    {
+        "type": "submit",
+        "defaultValue": "Save"
+    }
+]

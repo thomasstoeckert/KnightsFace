@@ -87,7 +87,7 @@ void render(Layer *layer, GContext *ctx) {
 		graphics_draw_text(ctx, dateBuff, s_data_font, daterect, GTextOverflowModeWordWrap, GTextAlignmentCenter, NULL);
 	}
 	/* ================= STEP 3: CENTER ICON ===================== */
-	int iconid = RESOURCE_ID_BACKGROUND_TICKS;
+	int iconid = RESOURCE_ID_CENTER_KNIGHTRO;
 	APP_LOG(APP_LOG_LEVEL_INFO, "CenterId: %s", centerIcon);
 		 if (!strcmp(centerIcon, "knightro")) { iconid = RESOURCE_ID_CENTER_KNIGHTRO; APP_LOG(APP_LOG_LEVEL_INFO, "Knightro"); }
 	else if (!strcmp(centerIcon, "stacked" )) { iconid = RESOURCE_ID_CENTER_STACKED; APP_LOG(APP_LOG_LEVEL_INFO, "Stacked"); }
@@ -113,8 +113,8 @@ void render(Layer *layer, GContext *ctx) {
 		char hourBuff[3] = "00";
 		strftime(minuteBuff, sizeof(minuteBuff), "%l", time_tm);
 		strftime(hourBuff, sizeof(hourBuff), "%M", time_tm);
-		GRect minutebox = GRect(26, 76, 50, 32);
-		GRect hourbox = GRect(106, 76, 50, 32);
+		GRect minutebox = GRect(24, 74, 50, 32);
+		GRect hourbox = GRect(108, 74, 50, 32);
 		graphics_context_set_text_color(ctx, GColorWhite);
 		graphics_draw_text(ctx, minuteBuff, s_time_font, minutebox, GTextOverflowModeWordWrap, GTextAlignmentLeft, NULL);
 		graphics_draw_text(ctx, hourBuff, s_time_font, hourbox, GTextOverflowModeWordWrap, GTextAlignmentRight, NULL);
@@ -162,7 +162,7 @@ static void init(void) {
 	window_stack_push(s_window, animated);
 
 	s_data_font = fonts_get_system_font(FONT_KEY_GOTHIC_14_BOLD);
-	s_time_font = fonts_get_system_font(FONT_KEY_LECO_20_BOLD_NUMBERS);
+	s_time_font = fonts_get_system_font(FONT_KEY_LECO_26_BOLD_NUMBERS_AM_PM);
 }
 
 static void deinit(void) {
